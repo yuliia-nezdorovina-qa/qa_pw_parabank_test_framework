@@ -16,6 +16,9 @@ export const test = base.extend<{
   openNewAccountTypeSavings;
   openNewAccountTypeChecking;
   billPayPage;
+  requestLoanPage;
+  transferFundsPage;
+  findTransactionsPage;
 }>({
   accountOverviewPage: async ({ page }, use) => {
     const accountOverviewPage = new AccountOverviewPage(page);

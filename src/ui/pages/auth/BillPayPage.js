@@ -47,11 +47,6 @@ export class BillPayPage {
     return this.page.getByText(errorMessage);
   }
 
-  async clickBillPayLink() {
-    await this.step('Click "Bill Pay" link', async () => {
-      await this.billPayLink.click();
-    });
-  }
   async clickSendPaymentButton() {
     await this.step(`Click "Send Payment" button`, async () => {
       await this.sendPaymentButton.click();

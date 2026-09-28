@@ -115,8 +115,10 @@ testParameters.forEach(
     title,
     message,
   }) => {
-    test.describe('Registartion with empty required fields', () => {
-      test(`Register with ${title}`, async ({ forgotLoginInfoPage }) => {
+    test.describe('Forgot Login Info with empty required fields', () => {
+      test(`Forgot Login Info with ${title}`, async ({
+        forgotLoginInfoPage,
+      }) => {
         await allure.severity(`minor`);
         await forgotLoginInfoPage.open();
         await forgotLoginInfoPage.fillFirstNameField(firstName);

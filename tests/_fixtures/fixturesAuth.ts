@@ -12,6 +12,7 @@ export const test = base.extend<{
   signInPage;
   homePage;
   forgotLoginInfoPage;
+  updateContactInfoPage;
 }>({
   registrationPage: async ({ page }, use) => {
     const registrationPage = new RegistrationPage(page);

@@ -62,7 +62,7 @@ export class OpenNewAccountPage {
   }
 
   async assertAccountTypeIsNotEmpty() {
-    await this.step(`Assert "Account Type" drvalue`, async () => {
+    await this.step(`Assert "Account Type"has a value`, async () => {
       const value = this.accountTypeField;
       await expect(value).not.toHaveValue('');
     });

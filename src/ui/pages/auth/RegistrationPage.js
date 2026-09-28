@@ -118,7 +118,7 @@ export class RegistrationPage {
   }
 
   async submitRegistrationForm(user) {
-    await this.step(`Fill the 'Registartion' form`, async () => {
+    await this.step(`Fill the 'Registration' form`, async () => {
       await this.fillFirstNameField(user.firstName);
       await this.fillLastNameField(user.lastName);
       await this.fillAddressField(user.address);

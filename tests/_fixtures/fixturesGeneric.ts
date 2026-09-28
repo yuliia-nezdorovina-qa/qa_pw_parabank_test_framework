@@ -15,6 +15,7 @@ export const test = base.extend<
     users;
     infoTestLog;
     addAllureTestHierarchy;
+    autoDeleteAllureResults;
   },
   {
     logger;

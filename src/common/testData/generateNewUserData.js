@@ -15,7 +15,7 @@ export function generateNewUserData() {
     city: faker.location.city(),
     state: faker.location.state(),
     zipCode: faker.location.zipCode(),
-    phone: faker.string.numeric(10), // 10 цифр, без розширень
+    phone: faker.string.numeric(10),
     ssn: faker.string.numeric(9),
     username: `user_${uniquePart.slice(0, 10)}`,
     password,

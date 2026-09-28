@@ -17,8 +17,8 @@ test.describe('Update Contact Info with valid data', () => {
 
     await updateContactInfoPage.open();
 
-    await updateContactInfoPage.fillFirstNameField(newData.username);
-    await updateContactInfoPage.fillLastNameField(newData.username);
+    await updateContactInfoPage.fillFirstNameField(newData.firstName);
+    await updateContactInfoPage.fillLastNameField(newData.lastName);
     await updateContactInfoPage.fillAddressField(newData.address);
     await updateContactInfoPage.fillCityField(newData.city);
     await updateContactInfoPage.fillStateField(newData.state);
@@ -39,8 +39,8 @@ test.describe('Update Contact Info with valid data', () => {
     const savedZipCode = await updateContactInfoPage.getZipCodeValue();
     const savedPhone = await updateContactInfoPage.getPhoneValue();
 
-    expect(savedFirstName).toBe(newData.username);
-    expect(savedLastName).toBe(newData.username);
+    expect(savedFirstName).toBe(newData.firstName);
+    expect(savedLastName).toBe(newData.lastName);
     expect(savedAddress).toBe(newData.address);
     expect(savedCity).toBe(newData.city);
     expect(savedState).toBe(newData.state);

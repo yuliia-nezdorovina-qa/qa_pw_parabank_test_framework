@@ -184,7 +184,7 @@ testParameters.forEach(
     title,
     message,
   }) => {
-    test.describe('Registartion with empty required fields', () => {
+    test.describe('Registration with empty required fields', () => {
       test(`Register with ${title}`, async ({ registrationPage }) => {
         await allure.severity(`minor`);
         await registrationPage.open();

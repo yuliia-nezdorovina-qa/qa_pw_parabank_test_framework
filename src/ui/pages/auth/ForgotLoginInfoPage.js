@@ -84,7 +84,7 @@ export class ForgotLoginInfoPage {
       await expect(this.errorMessage(messageText)).toBeVisible();
     });
   }
-  async assertSucessMessageContainsText(messageText) {
+  async assertSuccessMessageContainsText(messageText) {
     await this.step(
       `Assert the '${messageText}' message is shown`,
       async () => {

@@ -21,7 +21,7 @@ test('Successful `Forgot Login Info` flow test', async ({
   await forgotLoginInfoPage.fillZipCodeField(user.zipCode);
   await forgotLoginInfoPage.fillSsnField(user.ssn);
   await forgotLoginInfoPage.clickFindMyLoginInfoButton();
-  await forgotLoginInfoPage.assertSucessMessageContainsText(
+  await forgotLoginInfoPage.assertSuccessMessageContainsText(
     INFO_SUCCESS_MESSAGE_MESSAGE,
   );
 });

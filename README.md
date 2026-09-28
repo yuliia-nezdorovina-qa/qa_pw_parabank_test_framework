@@ -28,8 +28,16 @@ npm install -g allure-commandline
 
 ## How to run the tests
 
-// TODO - It's part of your task to add the appropriate instructions here. 
+Run the tests with `npx playwright test`
+
+Or Run the tests in headed mode (visible browser) with `npx playwright test --headed`
+
+Or Run the tests in interactive UI mode with `npx playwright test --ui`
+
+Or Debug the tests with `npx playwright test --debug`
+
 
 ## How to generate report
+Run the tests with `npx playwright test`
 
-// TODO - It's part of your task to add the appropriate instructions here. 
+Generate the report using `allure serve allure-results`
